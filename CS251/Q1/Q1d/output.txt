@@ -1,0 +1,21 @@
+			Call graph
+
+
+granularity: each sample hit covers 2 byte(s) for 0.05% of 20.46 seconds
+
+index % time    self  children    called     name
+               20.46    0.00     100/100         TestFunc [2]
+[1]    100.0   20.46    0.00     100         StaticFunc [1]
+-----------------------------------------------
+                0.00   20.46       1/1           main [3]
+[2]    100.0    0.00   20.46       1         TestFunc [2]
+               20.46    0.00     100/100         StaticFunc [1]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]    100.0    0.00   20.46                 main [3]
+                0.00   20.46       1/1           TestFunc [2]
+-----------------------------------------------
+
+Index by function name
+
+   [1] StaticFunc              [2] TestFunc

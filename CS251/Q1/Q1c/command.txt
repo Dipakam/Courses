@@ -1,0 +1,213 @@
+/usr/lib/systemd/systemd --switched-root --system --deserialize 22
+[kthreadd]
+[ksoftirqd/0]
+[kworker/0
+[migration/0]
+[rcu_bh]
+[rcu_sched]
+[lru-add-drain]
+[watchdog/0]
+[watchdog/1]
+[migration/1]
+[ksoftirqd/1]
+[kworker/1
+[watchdog/2]
+[migration/2]
+[ksoftirqd/2]
+[kworker/2
+[watchdog/3]
+[migration/3]
+[ksoftirqd/3]
+[kworker/3
+[watchdog/4]
+[migration/4]
+[ksoftirqd/4]
+[kworker/4
+[watchdog/5]
+[migration/5]
+[ksoftirqd/5]
+[kworker/5
+[watchdog/6]
+[migration/6]
+[ksoftirqd/6]
+[kworker/6
+[kworker/6
+[watchdog/7]
+[migration/7]
+[ksoftirqd/7]
+[kworker/7
+[kworker/7
+[kdevtmpfs]
+[netns]
+[khungtaskd]
+[writeback]
+[kintegrityd]
+[bioset]
+[bioset]
+[bioset]
+[kblockd]
+[kworker/0
+[md]
+[edac-poller]
+[watchdogd]
+[kworker/4
+[kswapd0]
+[ksmd]
+[khugepaged]
+[crypto]
+[kthrotld]
+[kmpath_rdacd]
+[kaluad]
+[kpsmoused]
+[ipv6_addrconf]
+[deferwq]
+[kauditd]
+[ata_sff]
+[scsi_eh_0]
+[scsi_tmf_0]
+[scsi_eh_1]
+[scsi_tmf_1]
+[scsi_eh_2]
+[scsi_tmf_2]
+[scsi_eh_3]
+[scsi_tmf_3]
+[scsi_eh_4]
+[scsi_tmf_4]
+[scsi_eh_5]
+[scsi_tmf_5]
+[nvkm-disp]
+[ttm_swap]
+[kdmflush]
+[bioset]
+[kdmflush]
+[bioset]
+[kdmflush]
+[bioset]
+[bioset]
+[xfsalloc]
+[xfs_mru_cache]
+[xfs-buf/dm-0]
+[xfs-data/dm-0]
+[xfs-conv/dm-0]
+[xfs-cil/dm-0]
+[xfs-reclaim/dm-]
+[xfs-log/dm-0]
+[xfs-eofblocks/d]
+[xfsaild/dm-0]
+[kworker/3
+[xfs-buf/dm-2]
+[xfs-data/dm-2]
+[xfs-conv/dm-2]
+[xfs-cil/dm-2]
+[xfs-reclaim/dm-]
+[xfs-log/dm-2]
+[xfs-eofblocks/d]
+[xfsaild/dm-2]
+[kworker/7
+[kworker/2
+[kworker/0
+/usr/lib/systemd/systemd-journald
+[kworker/1
+/usr/sbin/lvmetad -f
+/usr/lib/systemd/systemd-udevd
+[kworker/7
+[irq/32-mei_me]
+[xfs-buf/sda1]
+[xfs-data/sda1]
+[xfs-conv/sda1]
+[xfs-cil/sda1]
+[xfs-reclaim/sda]
+[xfs-log/sda1]
+[xfs-eofblocks/s]
+[xfsaild/sda1]
+[kdmflush]
+[bioset]
+[kdmflush]
+[bioset]
+[kdmflush]
+[bioset]
+[xfs-buf/dm-4]
+[xfs-data/dm-4]
+[xfs-conv/dm-4]
+[xfs-cil/dm-4]
+[xfs-reclaim/dm-]
+[xfs-log/dm-4]
+[xfs-eofblocks/d]
+[xfs-buf/dm-3]
+[xfs-data/dm-3]
+[xfs-conv/dm-3]
+[xfs-cil/dm-3]
+[xfs-reclaim/dm-]
+[xfs-log/dm-3]
+[xfs-eofblocks/d]
+[xfsaild/dm-4]
+[xfsaild/dm-3]
+[xfs-buf/dm-5]
+[xfs-data/dm-5]
+[xfs-conv/dm-5]
+[xfs-cil/dm-5]
+[xfs-reclaim/dm-]
+[xfs-log/dm-5]
+[xfs-eofblocks/d]
+[xfsaild/dm-5]
+[rpciod]
+[xprtiod]
+/sbin/auditd
+/sbin/audispd
+/usr/sbin/sedispatch
+/sbin/rngd -f
+/usr/sbin/irqbalance --foreground
+/usr/sbin/sssd -i --logger=files
+/usr/sbin/alsactl -s -n 19 -c -E ALSA_CONFIG_PATH=/etc/alsa/alsactl.conf --initfile=/lib/alsa/init/00main rdaemon
+/usr/sbin/ModemManager
+/usr/sbin/smartd -n -q never
+/usr/sbin/gssproxy -D
+/usr/sbin/NetworkManager --no-daemon
+/bin/bash /usr/sbin/ksmtuned
+/usr/libexec/sssd/sssd_be --domain default --uid 0 --gid 0 --logger=files
+/usr/libexec/sssd/sssd_nss --uid 0 --gid 0 --logger=files
+/usr/libexec/sssd/sssd_pam --uid 0 --gid 0 --logger=files
+/usr/libexec/sssd/sssd_autofs --uid 0 --gid 0 --logger=files
+[kworker/4
+/usr/libexec/accounts-daemon
+/usr/lib/systemd/systemd-logind
+/sbin/dhclient -d -q -sf /usr/libexec/nm-dhcp-helper -pf /var/run/dhclient-enp0s25.pid -lf /var/lib/NetworkManager/dhclient-0213ee34-ab76-441e-868b-aed04d982bb5-enp0s25.lease -cf /var/lib/NetworkManager/dhclient-enp0s25.conf enp0s25
+/usr/sbin/sshd -D
+/usr/sbin/cupsd -f
+/usr/sbin/rsyslogd -n
+/usr/bin/python2 -Es /usr/sbin/tuned -l -P
+/usr/sbin/libvirtd
+/usr/sbin/automount --foreground --dont-check-daemon
+/usr/sbin/atd -f
+/usr/sbin/gdm
+/usr/sbin/crond -n
+/usr/bin/X 
+/opt/teamviewer/tv_bin/teamviewerd -d
+/usr/libexec/postfix/master -w
+/usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/libexec/libvirt_leaseshelper
+[kworker/5
+/usr/libexec/upowerd
+[kworker/6
+/usr/libexec/boltd
+/usr/libexec/packagekitd
+/usr/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant.log -c /etc/wpa_supplicant/wpa_supplicant.conf -P /var/run/wpa_supplicant.pid
+[kworker/6
+[kworker/4
+[kworker/0
+gdm-session-worker [pam/gdm-password]
+/usr/libexec/udisks2/udisksd
+/usr/libexec/fwupd/fwupd
+[kworker/3
+[kworker/2
+[kworker/3
+[kworker/5
+[kworker/u16
+[kworker/1
+[kworker/u16
+[kworker/1
+[kworker/2
+[kworker/5
+[kworker/1
+[kworker/u16
+[kworker/2
+sleep 60

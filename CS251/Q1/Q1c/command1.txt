@@ -1,0 +1,213 @@
+1 /usr/lib/systemd/systemd --switched-root --system --deserialize 22
+2 [kthreadd]
+3 [ksoftirqd/0]
+4 [kworker/0
+5 [migration/0]
+6 [rcu_bh]
+7 [rcu_sched]
+8 [lru-add-drain]
+9 [watchdog/0]
+10 [watchdog/1]
+11 [migration/1]
+12 [ksoftirqd/1]
+13 [kworker/1
+14 [watchdog/2]
+15 [migration/2]
+16 [ksoftirqd/2]
+17 [kworker/2
+18 [watchdog/3]
+19 [migration/3]
+20 [ksoftirqd/3]
+21 [kworker/3
+22 [watchdog/4]
+23 [migration/4]
+24 [ksoftirqd/4]
+25 [kworker/4
+26 [watchdog/5]
+27 [migration/5]
+28 [ksoftirqd/5]
+29 [kworker/5
+30 [watchdog/6]
+31 [migration/6]
+32 [ksoftirqd/6]
+33 [kworker/6
+34 [kworker/6
+35 [watchdog/7]
+36 [migration/7]
+37 [ksoftirqd/7]
+38 [kworker/7
+39 [kworker/7
+40 [kdevtmpfs]
+41 [netns]
+42 [khungtaskd]
+43 [writeback]
+44 [kintegrityd]
+45 [bioset]
+46 [bioset]
+47 [bioset]
+48 [kblockd]
+49 [kworker/0
+50 [md]
+51 [edac-poller]
+52 [watchdogd]
+53 [kworker/4
+54 [kswapd0]
+55 [ksmd]
+56 [khugepaged]
+57 [crypto]
+58 [kthrotld]
+59 [kmpath_rdacd]
+60 [kaluad]
+61 [kpsmoused]
+62 [ipv6_addrconf]
+63 [deferwq]
+64 [kauditd]
+65 [ata_sff]
+66 [scsi_eh_0]
+67 [scsi_tmf_0]
+68 [scsi_eh_1]
+69 [scsi_tmf_1]
+70 [scsi_eh_2]
+71 [scsi_tmf_2]
+72 [scsi_eh_3]
+73 [scsi_tmf_3]
+74 [scsi_eh_4]
+75 [scsi_tmf_4]
+76 [scsi_eh_5]
+77 [scsi_tmf_5]
+78 [nvkm-disp]
+79 [ttm_swap]
+80 [kdmflush]
+81 [bioset]
+82 [kdmflush]
+83 [bioset]
+84 [kdmflush]
+85 [bioset]
+86 [bioset]
+87 [xfsalloc]
+88 [xfs_mru_cache]
+89 [xfs-buf/dm-0]
+90 [xfs-data/dm-0]
+91 [xfs-conv/dm-0]
+92 [xfs-cil/dm-0]
+93 [xfs-reclaim/dm-]
+94 [xfs-log/dm-0]
+95 [xfs-eofblocks/d]
+96 [xfsaild/dm-0]
+97 [kworker/3
+98 [xfs-buf/dm-2]
+99 [xfs-data/dm-2]
+100 [xfs-conv/dm-2]
+101 [xfs-cil/dm-2]
+102 [xfs-reclaim/dm-]
+103 [xfs-log/dm-2]
+104 [xfs-eofblocks/d]
+105 [xfsaild/dm-2]
+106 [kworker/7
+107 [kworker/2
+108 [kworker/0
+109 /usr/lib/systemd/systemd-journald
+110 [kworker/1
+111 /usr/sbin/lvmetad -f
+112 /usr/lib/systemd/systemd-udevd
+113 [kworker/7
+114 [irq/32-mei_me]
+115 [xfs-buf/sda1]
+116 [xfs-data/sda1]
+117 [xfs-conv/sda1]
+118 [xfs-cil/sda1]
+119 [xfs-reclaim/sda]
+120 [xfs-log/sda1]
+121 [xfs-eofblocks/s]
+122 [xfsaild/sda1]
+123 [kdmflush]
+124 [bioset]
+125 [kdmflush]
+126 [bioset]
+127 [kdmflush]
+128 [bioset]
+129 [xfs-buf/dm-4]
+130 [xfs-data/dm-4]
+131 [xfs-conv/dm-4]
+132 [xfs-cil/dm-4]
+133 [xfs-reclaim/dm-]
+134 [xfs-log/dm-4]
+135 [xfs-eofblocks/d]
+136 [xfs-buf/dm-3]
+137 [xfs-data/dm-3]
+138 [xfs-conv/dm-3]
+139 [xfs-cil/dm-3]
+140 [xfs-reclaim/dm-]
+141 [xfs-log/dm-3]
+142 [xfs-eofblocks/d]
+143 [xfsaild/dm-4]
+144 [xfsaild/dm-3]
+145 [xfs-buf/dm-5]
+146 [xfs-data/dm-5]
+147 [xfs-conv/dm-5]
+148 [xfs-cil/dm-5]
+149 [xfs-reclaim/dm-]
+150 [xfs-log/dm-5]
+151 [xfs-eofblocks/d]
+152 [xfsaild/dm-5]
+153 [rpciod]
+154 [xprtiod]
+155 /sbin/auditd
+156 /sbin/audispd
+157 /usr/sbin/sedispatch
+158 /sbin/rngd -f
+159 /usr/sbin/irqbalance --foreground
+160 /usr/sbin/sssd -i --logger=files
+161 /usr/sbin/alsactl -s -n 19 -c -E ALSA_CONFIG_PATH=/etc/alsa/alsactl.conf --initfile=/lib/alsa/init/00main rdaemon
+162 /usr/sbin/ModemManager
+163 /usr/sbin/smartd -n -q never
+164 /usr/sbin/gssproxy -D
+165 /usr/sbin/NetworkManager --no-daemon
+166 /bin/bash /usr/sbin/ksmtuned
+167 /usr/libexec/sssd/sssd_be --domain default --uid 0 --gid 0 --logger=files
+168 /usr/libexec/sssd/sssd_nss --uid 0 --gid 0 --logger=files
+169 /usr/libexec/sssd/sssd_pam --uid 0 --gid 0 --logger=files
+170 /usr/libexec/sssd/sssd_autofs --uid 0 --gid 0 --logger=files
+171 [kworker/4
+172 /usr/libexec/accounts-daemon
+173 /usr/lib/systemd/systemd-logind
+174 /sbin/dhclient -d -q -sf /usr/libexec/nm-dhcp-helper -pf /var/run/dhclient-enp0s25.pid -lf /var/lib/NetworkManager/dhclient-0213ee34-ab76-441e-868b-aed04d982bb5-enp0s25.lease -cf /var/lib/NetworkManager/dhclient-enp0s25.conf enp0s25
+175 /usr/sbin/sshd -D
+176 /usr/sbin/cupsd -f
+177 /usr/sbin/rsyslogd -n
+178 /usr/bin/python2 -Es /usr/sbin/tuned -l -P
+179 /usr/sbin/libvirtd
+180 /usr/sbin/automount --foreground --dont-check-daemon
+181 /usr/sbin/atd -f
+182 /usr/sbin/gdm
+183 /usr/sbin/crond -n
+184 /usr/bin/X 
+185 /opt/teamviewer/tv_bin/teamviewerd -d
+186 /usr/libexec/postfix/master -w
+187 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/libexec/libvirt_leaseshelper
+188 [kworker/5
+189 /usr/libexec/upowerd
+190 [kworker/6
+191 /usr/libexec/boltd
+192 /usr/libexec/packagekitd
+193 /usr/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant.log -c /etc/wpa_supplicant/wpa_supplicant.conf -P /var/run/wpa_supplicant.pid
+194 [kworker/6
+195 [kworker/4
+196 [kworker/0
+197 gdm-session-worker [pam/gdm-password]
+198 /usr/libexec/udisks2/udisksd
+199 /usr/libexec/fwupd/fwupd
+200 [kworker/3
+201 [kworker/2
+202 [kworker/3
+203 [kworker/5
+204 [kworker/u16
+205 [kworker/1
+206 [kworker/u16
+207 [kworker/1
+208 [kworker/2
+209 [kworker/5
+210 [kworker/1
+211 [kworker/u16
+212 [kworker/2
+213 sleep 60
