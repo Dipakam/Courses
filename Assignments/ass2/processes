@@ -1,0 +1,316 @@
+COMMAND           PID CMD
+systemd             1 /lib/systemd/systemd --system --deserialize 18
+kthreadd            2 [kthreadd]
+kworker/0:0H        4 [kworker/0:0H]
+mm_percpu_wq        6 [mm_percpu_wq]
+ksoftirqd/0         7 [ksoftirqd/0]
+rcu_sched           8 [rcu_sched]
+rcu_bh              9 [rcu_bh]
+migration/0        10 [migration/0]
+watchdog/0         11 [watchdog/0]
+cpuhp/0            12 [cpuhp/0]
+cpuhp/1            13 [cpuhp/1]
+watchdog/1         14 [watchdog/1]
+migration/1        15 [migration/1]
+ksoftirqd/1        16 [ksoftirqd/1]
+kworker/1:0H       18 [kworker/1:0H]
+cpuhp/2            19 [cpuhp/2]
+watchdog/2         20 [watchdog/2]
+migration/2        21 [migration/2]
+ksoftirqd/2        22 [ksoftirqd/2]
+kworker/2:0H       24 [kworker/2:0H]
+cpuhp/3            25 [cpuhp/3]
+watchdog/3         26 [watchdog/3]
+migration/3        27 [migration/3]
+ksoftirqd/3        28 [ksoftirqd/3]
+kworker/3:0H       30 [kworker/3:0H]
+kdevtmpfs          31 [kdevtmpfs]
+netns              32 [netns]
+rcu_tasks_kthre    33 [rcu_tasks_kthre]
+kauditd            34 [kauditd]
+khungtaskd         38 [khungtaskd]
+oom_reaper         39 [oom_reaper]
+writeback          40 [writeback]
+kcompactd0         41 [kcompactd0]
+ksmd               42 [ksmd]
+khugepaged         43 [khugepaged]
+crypto             44 [crypto]
+kintegrityd        45 [kintegrityd]
+kblockd            46 [kblockd]
+ata_sff            48 [ata_sff]
+md                 49 [md]
+edac-poller        50 [edac-poller]
+devfreq_wq         51 [devfreq_wq]
+watchdogd          52 [watchdogd]
+kswapd0            55 [kswapd0]
+ecryptfs-kthrea    56 [ecryptfs-kthrea]
+kthrotld           98 [kthrotld]
+acpi_thermal_pm    99 [acpi_thermal_pm]
+ipv6_addrconf     103 [ipv6_addrconf]
+kstrp             112 [kstrp]
+charger_manager   129 [charger_manager]
+scsi_eh_0         178 [scsi_eh_0]
+scsi_tmf_0        179 [scsi_tmf_0]
+scsi_eh_1         180 [scsi_eh_1]
+scsi_tmf_1        181 [scsi_tmf_1]
+ttm_swap          183 [ttm_swap]
+i915/signal:0     185 [i915/signal:0]
+i915/signal:1     186 [i915/signal:1]
+i915/signal:2     187 [i915/signal:2]
+i915/signal:4     188 [i915/signal:4]
+kworker/2:1H      200 [kworker/2:1H]
+kworker/0:1H      203 [kworker/0:1H]
+kworker/3:1H      224 [kworker/3:1H]
+jbd2/sda7-8       226 [jbd2/sda7-8]
+ext4-rsv-conver   227 [ext4-rsv-conver]
+kworker/1:1H      272 [kworker/1:1H]
+loop0             292 [loop0]
+loop1             294 [loop1]
+loop2             296 [loop2]
+loop3             298 [loop3]
+loop4             300 [loop4]
+loop5             302 [loop5]
+loop6             304 [loop6]
+loop7             306 [loop7]
+loop8             308 [loop8]
+loop9             310 [loop9]
+loop10            312 [loop10]
+loop11            314 [loop11]
+loop12            316 [loop12]
+loop13            319 [loop13]
+loop14            320 [loop14]
+loop15            322 [loop15]
+loop16            325 [loop16]
+loop17            326 [loop17]
+loop18            328 [loop18]
+loop19            330 [loop19]
+loop20            332 [loop20]
+loop21            334 [loop21]
+loop22            337 [loop22]
+loop23            338 [loop23]
+loop24            341 [loop24]
+loop25            342 [loop25]
+loop26            344 [loop26]
+loop27            347 [loop27]
+kworker/u9:2      395 [kworker/u9:2]
+cfg80211          421 [cfg80211]
+avahi-daemon      807 avahi-daemon: running [deepak-HP-Notebook.local]
+thermald          808 /usr/sbin/thermald --no-daemon --dbus-enable
+acpid             810 /usr/sbin/acpid
+ModemManager      811 /usr/sbin/ModemManager
+cron              813 /usr/sbin/cron -f
+accounts-daemon   818 /usr/lib/accountsservice/accounts-daemon
+bluetoothd        820 /usr/lib/bluetooth/bluetoothd
+networkd-dispat   821 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+irqbalance        823 /usr/sbin/irqbalance --foreground
+udisksd           825 /usr/lib/udisks2/udisksd
+dbus-daemon       830 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+NetworkManager    861 /usr/sbin/NetworkManager --no-daemon
+wpa_supplicant    862 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+systemd-logind    863 /lib/systemd/systemd-logind
+rsyslogd          864 /usr/sbin/rsyslogd -n
+snapd             866 /usr/lib/snapd/snapd
+avahi-daemon      894 avahi-daemon: chroot helper
+polkitd           897 /usr/lib/policykit-1/polkitd --no-debug
+php-fpm7.2        996 php-fpm: master process (/etc/php/7.2/fpm/php-fpm.conf)
+unattended-upgr   999 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+gdm3             1028 /usr/sbin/gdm3
+mysqld           1039 /usr/sbin/mysqld --daemonize --pid-file=/run/mysqld/mysqld.pid
+gdm-session-wor  1045 gdm-session-worker [pam/gdm-autologin]
+php-fpm7.2       1049 php-fpm: pool www
+php-fpm7.2       1050 php-fpm: pool www
+systemd          1051 /lib/systemd/systemd --user
+(sd-pam)         1052 (sd-pam)
+apache2          1075 /usr/sbin/apache2 -k start
+gnome-keyring-d  1077 /usr/bin/gnome-keyring-daemon --daemonize --login
+gdm-x-session    1086 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+Xorg             1088 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+whoopsie         1099 /usr/bin/whoopsie -f
+kerneloops       1101 /usr/sbin/kerneloops --test
+kerneloops       1103 /usr/sbin/kerneloops
+dbus-daemon      1179 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+gnome-session-b  1182 /usr/lib/gnome-session/gnome-session-binary --session=ubuntu
+xbrla <defunct>  1258 [xbrlapi] <defunct>
+ssh-agent        1278 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+at-spi-bus-laun  1280 /usr/lib/at-spi2-core/at-spi-bus-launcher
+dbus-daemon      1285 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+at-spi2-registr  1287 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+gnome-shell      1304 /usr/bin/gnome-shell
+upowerd          1310 /usr/lib/upower/upowerd
+gvfsd            1324 /usr/lib/gvfs/gvfsd
+gvfsd-fuse       1329 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+pulseaudio       1340 /usr/bin/pulseaudio --start --log-target=syslog
+rtkit-daemon     1341 /usr/lib/rtkit/rtkit-daemon
+krfcommd         1349 [krfcommd]
+ibus-daemon      1359 ibus-daemon --xim --panel disable
+ibus-dconf       1363 /usr/lib/ibus/ibus-dconf
+ibus-x11         1365 /usr/lib/ibus/ibus-x11 --kill-daemon
+ibus-portal      1369 /usr/lib/ibus/ibus-portal
+gnome-shell-cal  1378 /usr/lib/gnome-shell/gnome-shell-calendar-server
+evolution-sourc  1384 /usr/lib/evolution/evolution-source-registry
+boltd            1392 /usr/lib/x86_64-linux-gnu/boltd
+dconf-service    1395 /usr/lib/dconf/dconf-service
+goa-daemon       1406 /usr/lib/gnome-online-accounts/goa-daemon
+gvfs-udisks2-vo  1407 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+gvfs-afc-volume  1413 /usr/lib/gvfs/gvfs-afc-volume-monitor
+gvfs-gphoto2-vo  1418 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+gvfs-goa-volume  1422 /usr/lib/gvfs/gvfs-goa-volume-monitor
+goa-identity-se  1431 /usr/lib/gnome-online-accounts/goa-identity-service
+gvfs-mtp-volume  1433 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+gsd-power        1440 /usr/lib/gnome-settings-daemon/gsd-power
+packagekitd      1441 /usr/lib/packagekit/packagekitd
+gsd-print-notif  1443 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gsd-rfkill       1444 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gsd-screensaver  1445 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gsd-sharing      1452 /usr/lib/gnome-settings-daemon/gsd-sharing
+gsd-smartcard    1456 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gsd-xsettings    1461 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gsd-wacom        1464 /usr/lib/gnome-settings-daemon/gsd-wacom
+gsd-sound        1472 /usr/lib/gnome-settings-daemon/gsd-sound
+gsd-a11y-settin  1481 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gsd-color        1482 /usr/lib/gnome-settings-daemon/gsd-color
+gsd-clipboard    1485 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gsd-housekeepin  1486 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gsd-datetime     1487 /usr/lib/gnome-settings-daemon/gsd-datetime
+gsd-media-keys   1491 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gsd-keyboard     1498 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gsd-mouse        1500 /usr/lib/gnome-settings-daemon/gsd-mouse
+gsd-printer      1520 /usr/lib/gnome-settings-daemon/gsd-printer
+colord           1533 /usr/lib/colord/colord
+evolution-calen  1543 /usr/lib/evolution/evolution-calendar-factory
+nautilus-deskto  1554 nautilus-desktop
+gsd-disk-utilit  1557 /usr/lib/gnome-disk-utility/gsd-disk-utility-notify
+ibus-engine-sim  1573 /usr/lib/ibus/ibus-engine-simple
+gvfsd-trash      1604 /usr/lib/gvfs/gvfsd-trash --spawner :1.22 /org/gtk/gvfs/exec_spaw/0
+evolution-calen  1620 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1543x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/1543/2
+evolution-addre  1637 /usr/lib/evolution/evolution-addressbook-factory
+evolution-addre  1648 /usr/lib/evolution/evolution-addressbook-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx1637x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/1637/2
+gnome-terminal-  1669 /usr/lib/gnome-terminal/gnome-terminal-server
+bash             1678 bash
+update-notifier  1703 update-notifier
+gnome-software   1706 /usr/bin/gnome-software --gapplication-service
+livep <defunct>  1710 [livepatch-notif] <defunct>
+fwupd            1727 /usr/lib/fwupd/fwupd
+firefox          1790 /usr/lib/firefox/firefox -new-window
+nautilus         1833 /usr/bin/nautilus --gapplication-service
+gconfd-2         1912 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+Web Content      1936 /usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 1 -prefMapSize 175586 -schedulerPrefs 0001,2 -parentBuildID 20181207224003 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 1790 true tab
+WebExtensions    2038 /usr/lib/firefox/firefox -contentproc -childID 3 -isForBrowser -prefsLen 244 -prefMapSize 175586 -schedulerPrefs 0001,2 -parentBuildID 20181207224003 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 1790 true tab
+deja-dup-monito  2189 /usr/lib/deja-dup/deja-dup-monitor
+thunderbird      2662 /usr/lib/thunderbird/thunderbird
+gvfsd-http       2737 /usr/lib/gvfs/gvfsd-http --spawner :1.22 /org/gtk/gvfs/exec_spaw/1
+chrome           2742 /opt/google/chrome/chrome https://www.hackerrank.com/eso207pa1
+cat              2748 cat
+cat              2749 cat
+chrome           2752 /opt/google/chrome/chrome --type=zygote --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a,
+nacl_helper      2753 /opt/google/chrome/nacl_helper
+chrome           2756 /opt/google/chrome/chrome --type=zygote --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a,
+chrome           2783 /opt/google/chrome/chrome --type=gpu-process --field-trial-handle=7212569466783665826,13175701052791661931,131072 --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --gpu-preferences=KAAAAAAAAACAAABAAQAAAAAAAAAAAGAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --service-request-channel-token=3473368962831843782
+chrome           2838 /opt/google/chrome/chrome --type=-broker
+chrome           3072 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=3391689717962017037 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=3391689717962017037 --renderer-client-id=3 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome           3094 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=7093160880279422183 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=7093160880279422183 --renderer-client-id=4 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome           3109 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=893681860916497018 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=893681860916497018 --renderer-client-id=5 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome           3116 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=13300513707986297912 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=13300513707986297912 --renderer-client-id=6 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome           3123 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=3763508003560557038 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=3763508003560557038 --renderer-client-id=7 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome           3124 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=11385418675464459599 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=11385418675464459599 --renderer-client-id=8 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome           3125 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=106084577282943427 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=106084577282943427 --renderer-client-id=9 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome           3138 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=2563583168908272722 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=2563583168908272722 --renderer-client-id=10 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome           3139 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=382438132656502748 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=382438132656502748 --renderer-client-id=11 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome           3150 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=8487732218683620196 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=8487732218683620196 --renderer-client-id=12 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+gdm-session-wor  5442 gdm-session-worker [pam/gdm-password]
+gdm-session-wor  5550 gdm-session-worker [pam/gdm-password]
+gvfsd-metadata   5780 /usr/lib/gvfs/gvfsd-metadata
+gvfsd-network    7630 /usr/lib/gvfs/gvfsd-network --spawner :1.22 /org/gtk/gvfs/exec_spaw/3
+gvfsd-dnssd      7750 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.22 /org/gtk/gvfs/exec_spaw/26
+kworker/u9:0     9866 [kworker/u9:0]
+python3          9924 python3 /usr/lib/software-properties/software-properties-dbus
+mount.ntfs      10987 /sbin/mount.ntfs /dev/sda6 /media/deepak/New Volume -o rw,nodev,nosuid,uid=1000,gid=1000,uhelper=udisks2
+gdm-session-wor 11819 gdm-session-worker [pam/gdm-password]
+mount.ntfs      13603 /sbin/mount.ntfs /dev/sda4 /media/deepak/3CD614A4D6146106 -o rw,nodev,nosuid,uid=1000,gid=1000,uhelper=udisks2
+apache2         14758 /usr/sbin/apache2 -k start
+apache2         14759 /usr/sbin/apache2 -k start
+apache2         14760 /usr/sbin/apache2 -k start
+apache2         14761 /usr/sbin/apache2 -k start
+apache2         14762 /usr/sbin/apache2 -k start
+cupsd           14766 /usr/sbin/cupsd -l
+cups-browsed    14767 /usr/sbin/cups-browsed
+systemd-resolve 15038 /lib/systemd/systemd-resolved
+systemd-timesyn 15044 /lib/systemd/systemd-timesyncd
+systemd-journal 15048 /lib/systemd/systemd-journald
+systemd-udevd   16410 /lib/systemd/systemd-udevd
+Web Content     17127 /usr/lib/firefox/firefox -contentproc -childID 11 -isForBrowser -prefsLen 9304 -prefMapSize 175586 -schedulerPrefs 0001,2 -parentBuildID 20181207224003 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 1790 true tab
+Web Content     17171 /usr/lib/firefox/firefox -contentproc -childID 12 -isForBrowser -prefsLen 9304 -prefMapSize 175586 -schedulerPrefs 0001,2 -parentBuildID 20181207224003 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 1790 true tab
+chrome          17379 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=10601793651650907351 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=10601793651650907351 --renderer-client-id=411 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          17450 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=11474782337122328537 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=11474782337122328537 --renderer-client-id=415 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          17502 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=4954766000605090912 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=4954766000605090912 --renderer-client-id=419 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          17527 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=16126344415632872395 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=16126344415632872395 --renderer-client-id=420 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          17784 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=7198469012816970788 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=7198469012816970788 --renderer-client-id=431 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          17889 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=3370930402191105205 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=3370930402191105205 --renderer-client-id=436 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          17907 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=1521646343630142080 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=1521646343630142080 --renderer-client-id=437 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          17925 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=8539001580033111326 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=8539001580033111326 --renderer-client-id=438 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          17937 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=8414675028554354026 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=8414675028554354026 --renderer-client-id=439 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          17951 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=12109521920122162253 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=12109521920122162253 --renderer-client-id=440 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          17956 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=1372390401753242619 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=1372390401753242619 --renderer-client-id=441 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          17959 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=16796016107981681647 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=16796016107981681647 --renderer-client-id=442 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          17984 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=746621943576488684 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=746621943576488684 --renderer-client-id=443 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          18213 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=7315307976069599390 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=7315307976069599390 --renderer-client-id=450 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          18843 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=8761189999844288479 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=8761189999844288479 --renderer-client-id=466 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          18859 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=16151986956562382784 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=16151986956562382784 --renderer-client-id=467 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          18956 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=6835217258875538285 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=6835217258875538285 --renderer-client-id=471 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          19047 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=14980309547673317790 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=14980309547673317790 --renderer-client-id=476 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          19135 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=9631670146473370713 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=9631670146473370713 --renderer-client-id=480 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          19275 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=14452470062738519357 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=14452470062738519357 --renderer-client-id=486 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+runme2          19344 ./runme2
+top             19420 top
+chrome          19874 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=6230025771138464084 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=6230025771138464084 --renderer-client-id=505 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          20024 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=6927571405389337789 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=6927571405389337789 --renderer-client-id=510 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          20072 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=12331867614777262259 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=12331867614777262259 --renderer-client-id=513 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          20166 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=1375716678194738184 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=1375716678194738184 --renderer-client-id=517 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          22320 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=3460619062267852070 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=3460619062267852070 --renderer-client-id=559 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          22336 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=12171428134159680894 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=12171428134159680894 --renderer-client-id=560 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          22859 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=15230292590690331488 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=15230292590690331488 --renderer-client-id=578 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+irq/127-mei_me  23874 [irq/127-mei_me]
+chrome          24661 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=18373603300230844035 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=18373603300230844035 --renderer-client-id=612 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          24711 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=14870031114556206739 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=14870031114556206739 --renderer-client-id=615 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          24825 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=1922924487228068389 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=1922924487228068389 --renderer-client-id=619 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+yelp            24903 yelp
+WebKitWebProces 24968 /usr/lib/x86_64-linux-gnu/webkit2gtk-4.0/WebKitWebProcess 2 17
+WebKitNetworkPr 24970 /usr/lib/x86_64-linux-gnu/webkit2gtk-4.0/WebKitNetworkProcess 3 17
+chrome          25154 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=15976013594045483051 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=15976013594045483051 --renderer-client-id=627 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          25228 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=11413807933382097489 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=11413807933382097489 --renderer-client-id=629 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          25259 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=4213370072226216284 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=4213370072226216284 --renderer-client-id=631 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+atom            25664 /snap/atom/210/usr/share/atom/atom --executed-from=/home/deepak/Documents/CS251/assignments/ass2 --pid=25648 script.sh
+atom            25667 /snap/atom/210/usr/share/atom/atom --type=zygote --no-sandbox
+atom            25706 /snap/atom/210/usr/share/atom/atom --type=renderer --enable-experimental-web-platform-features --no-sandbox --service-pipe-token=799C549293EC0BA200A2AEB11F1AC5B3 --lang=en-GB --app-path=/snap/atom/210/usr/share/atom/resources/app.asar --node-integration=true --webview-tag=true --no-sandbox --background-color=#fff --disable-blink-features=Auxclick --context-id=2 --enable-pinch --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;0,16,3553;0,17,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;1,16,3553;1,17,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;2,16,3553;2,17,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553;3,16,3553;3,17,3553;4,0,3553;4,1,3553;4,2,3553;4,3,3553;4,4,3553;4,5,3553;4,6,3553;4,7,3553;4,8,3553;4,9,3553;4,10,3553;4,11,3553;4,12,3553;4,13,3553;4,14,3553;4,15,3553;4,16,3553;4,17,3553 --disable-accelerated-video-decode --disable-gpu-compositing --enable-gpu-async-worker-context --service-request-channel-token=799C549293EC0BA200A2AEB11F1AC5B3 --renderer-client-id=4 --shared-files=v8_natives_data:100,v8_snapshot_data:101
+atom            25768 /snap/atom/210/usr/share/atom/atom --type=renderer --enable-experimental-web-platform-features --no-sandbox --service-pipe-token=72E981E5797E5303EDC8A82CEE5EA895 --lang=en-GB --app-path=/snap/atom/210/usr/share/atom/resources/app.asar --node-integration=true --webview-tag=true --no-sandbox --background-color=#fff --context-id=2 --enable-pinch --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;0,16,3553;0,17,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;1,16,3553;1,17,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;2,16,3553;2,17,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553;3,16,3553;3,17,3553;4,0,3553;4,1,3553;4,2,3553;4,3,3553;4,4,3553;4,5,3553;4,6,3553;4,7,3553;4,8,3553;4,9,3553;4,10,3553;4,11,3553;4,12,3553;4,13,3553;4,14,3553;4,15,3553;4,16,3553;4,17,3553 --disable-accelerated-video-decode --disable-gpu-compositing --enable-gpu-async-worker-context --service-request-channel-token=72E981E5797E5303EDC8A82CEE5EA895 --renderer-client-id=6 --shared-files=v8_natives_data:100,v8_snapshot_data:101
+kworker/1:1     25835 [kworker/1:1]
+chrome          25907 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=8079095568175355711 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=8079095568175355711 --renderer-client-id=639 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+kworker/3:2     25919 [kworker/3:2]
+chrome          26127 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=13577932878425059891 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=13577932878425059891 --renderer-client-id=645 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+kworker/u8:1    26210 [kworker/u8:1]
+kworker/0:0     26299 [kworker/0:0]
+chrome          26300 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=9688828310234256916 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=9688828310234256916 --renderer-client-id=649 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          26445 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=10930517659843589915 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=10930517659843589915 --renderer-client-id=656 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+kworker/u8:3    26481 [kworker/u8:3]
+chrome          26554 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=11451810962634401020 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=11451810962634401020 --renderer-client-id=660 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          26698 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=8503129000432976234 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=8503129000432976234 --renderer-client-id=667 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+Web Content     26795 /usr/lib/firefox/firefox -contentproc -childID 15 -isForBrowser -prefsLen 9303 -prefMapSize 175586 -schedulerPrefs 0001,2 -parentBuildID 20181207224003 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 1790 true tab
+chrome          26892 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=6047095150109046420 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=6047095150109046420 --renderer-client-id=671 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+kworker/2:2     26987 [kworker/2:2]
+kworker/0:1     27056 [kworker/0:1]
+kworker/3:0     27063 [kworker/3:0]
+kworker/2:0     27192 [kworker/2:0]
+chrome          27231 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=5230732673900653770 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=5230732673900653770 --renderer-client-id=677 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+kworker/1:0     27267 [kworker/1:0]
+kworker/0:2     27269 [kworker/0:2]
+chrome          27270 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=11695465862345857527 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=11695465862345857527 --renderer-client-id=679 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          27291 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=7359670151646791777 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=7359670151646791777 --renderer-client-id=680 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+kworker/3:1     27346 [kworker/3:1]
+kworker/0:3     27351 [kworker/0:3]
+kworker/2:1     27379 [kworker/2:1]
+kworker/u8:0    27380 [kworker/u8:0]
+kworker/1:2     27410 [kworker/1:2]
+chrome          27413 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=12696117138435849489 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=12696117138435849489 --renderer-client-id=683 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+chrome          27427 /opt/google/chrome/chrome --type=renderer --field-trial-handle=7212569466783665826,13175701052791661931,131072 --service-pipe-token=18109673647108492168 --lang=en-GB --enable-crash-reporter=07a9949a-e5aa-4224-bd46-0debe7f7346a, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=18109673647108492168 --renderer-client-id=684 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+script.sh       27449 /bin/bash ./script.sh
+ps              27450 ps -eo comm,pid,cmd

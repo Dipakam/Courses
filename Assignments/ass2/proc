@@ -1,0 +1,14 @@
+/usr/bin/python3 /usr/bin/n   821 networkd-dispat
+/usr/bin/dbus-daemon --syst   830 dbus-daemon
+/usr/bin/python3 /usr/share   999 unattended-upgr
+/usr/bin/gnome-keyring-daem  1077 gnome-keyring-d
+/usr/bin/whoopsie -f         1099 whoopsie
+/usr/bin/dbus-daemon --sess  1179 dbus-daemon
+/usr/bin/ssh-agent /usr/bin  1278 ssh-agent
+/usr/bin/dbus-daemon --conf  1285 dbus-daemon
+/usr/bin/gnome-shell         1304 gnome-shell
+/usr/bin/pulseaudio --start  1340 pulseaudio
+/usr/bin/gnome-software --g  1706 gnome-software
+/usr/bin/nautilus --gapplic  1833 nautilus
+/bin/bash ./script.sh       28942 script.sh
+grep /bin/*\|/usr/bin/*     28944 grep

@@ -1,0 +1,111 @@
+ 2005  vi input.txt
+ 2006  vi main.c
+ 2007  ./a.out
+ 2008  gcc main.c
+ 2009  ./a.out
+ 2010  vi main.c
+ 2011  gcc main.c
+ 2012  ./a.out
+ 2013  vi main.c
+ 2014  gcc main.c
+ 2015  vi main.c
+ 2016  gcc main.c
+ 2017  ./a.out
+ 2018  vi add.c
+ 2019  vi sub.c
+ 2020  vi mul.c
+ 2021  vi div.c
+ 2022  gcc -c add.c -o add.o
+ 2023  gcc -c sub.c -o sub.o
+ 2024  gcc -c mul.c -o mul.o
+ 2025  gcc -c div.c -o div.o
+ 2026  ls
+ 2027  vi add.h
+ 2028  vi mul.h
+ 2029  vi sub.h
+ 2030  vi div.h
+ 2031  gcc -c fPIC div.c -o div.o
+ 2032  gcc -c -fPIC div.c -o div.o
+ 2033  gcc -c -fPIC mul.c -o mul.o
+ 2034  vi add.h
+ 2035  vi add.c
+ 2036  vi sub.c
+ 2037  vi mul.c
+ 2038  vi div.c
+ 2039  gcc -c add.c -o add.o
+ 2040  gcc -c sub.c -o sub.o
+ 2041  gcc -c mul.c -o mul.o
+ 2042  gcc -c div.c -o div.o
+ 2043  gcc -c -fPIC mul.c -o mul.o
+ 2044  gcc -c -fPIC div.c -o div.o
+ 2045* ar rcs ./libmd.so ./add.o ./sub.o
+ 2046  ls
+ 2047  gcc -shared ./mul.o ./div.o -o ./libmd.so
+ 2048  ls
+ 2049  vi main.c 
+ 2050  man gcc
+ 2051  vi main.c 
+ 2052  gcc -Wall main.c -lmd
+ 2053  vi main.c 
+ 2054  gcc -Wall main.c -lmd
+ 2055  vi main.c 
+ 2056  gcc -Wall main.c -lmd
+ 2057  ls
+ 2058  rm div.*
+ 2059  ls
+ 2060  vi divide.h
+ 2061  vi divide.c
+ 2062  gcc -c -fPIC divide.c -o divide.o
+ 2063  gcc -shared ./libmd.so ./mul.o ./divide.o
+ 2064  gcc -shared ./mul.o ./div.o -o ./libmd.so
+ 2065  gcc -shared ./mul.o ./divide.o -o ./libmd.so
+ 2066  vi main.c
+ 2067  gcc -Wall main.c -lmd
+ 2068  vi main.c
+ 2069  gcc -Wall main.c -lmd
+ 2070  gcc -Wall -lmd main.c
+ 2071  gcc -L~/Documents/CS251/assignments/ass4/md -Wall -o test main.c -lmd
+ 2072  pwd
+ 2073  gcc -L/home/deepak/Documents/CS251/assignments/ass4/md -Wall -o test main.c -lmd
+ 2074  gcc -L/home/deepak/Documents/CS251/assignments/ass4/md -Wall -o test main.c
+ 2075  gcc -L/home/deepak/Documents/CS251/assignments/ass4/md -Wall -o test main.c -lmd
+ 2076  echo $LD_LIBRARY_PATH
+ 2077  $LD_LIBRARY_PATH=/home/deepak/Documents/CS251/assignments/ass4/md
+ 2078  $LD_LIBRARY_PATH=/home/deepak/Documents/CS251/assignments/ass4/libmd.so
+ 2079  $LD_LIBRARY_PATH='/home/deepak/Documents/CS251/assignments/ass4/libmd.so'
+ 2080  man ld
+ 2081  gcc -o test main.c -las
+ 2082  gcc -o -l/home/deepak/Documents/CS251/assignments/ass4/as test main.c -las
+ 2083  gcc -o -L/home/deepak/Documents/CS251/assignments/ass4/as test main.c -las
+ 2084  pwd
+ 2085  gcc -o -L/home/deepak/Documents/CS251/assignments/ass4 test main.c -las
+ 2086  gcc -o -L/home/deepak/Documents/CS251/assignments/ass4/as test main.c -las
+ 2087  gcc -o -L/home/deepak/Documents/CS251/assignments/ass4/libas.a test main.c -las
+ 2088  gcc -o main main.c libas.a
+ 2089  gcc -o main main.c libas.a -lmd
+ 2090  ls
+ 2091  gcc -L /home/deepak/Documents/CS251/assignments/ass4/md -o main main.c libas.a -lmd
+ 2092  man gcc
+ 2093  gcc -L /home/deepak/Documents/CS251/assignments/ass4/ -o main main.c libas.a -lmd
+ 2094  ./main
+ 2095  echo $LD_LIBRARY_PATH
+ 2096  $LD_LIBRARY_PATH= /home/deepak/Documents/CS251/assignments/ass4
+ 2097  $LD_LIBRARY_PATH = /home/deepak/Documents/CS251/assignments/ass4
+ 2098  LD_LIBRARY_PATH= /home/deepak/Documents/CS251/assignments/ass4
+ 2099  LD_LIBRARY_PATH= /home/deepak/Documents/CS251/assignments/ass4:$LD_LIBRARY_PATH
+ 2100  LD_LIBRARY_PATH= /home/deepak/Documents/CS251/assignments/ass4 
+ 2101  export LD_LIBRARY_PATH= $(pwd)
+ 2102  export LD_LIBRARY_PATH =$(pwd)
+ 2103  LD_LIBRARY_PATH =$(pwd)
+ 2104  LD_LIBRARY_PATH=$(pwd)
+ 2105  echo $LD_LIBRARY_PATH
+ 2106  export LD_LIBRARY_PATH=/home/deepak/Documents/CS251/assignments/ass4
+ 2107  export LD_LIBRARY_PATH=/home/deepak/Documents/CS251/assignments/ass4:$LD_LIBRARY_PATH
+ 2108  ./main
+ 2109  history | tail 1
+ 2110  history | tail -1
+ 2111  history | tail -20
+ 2112  history | tail -100
+ 2113  history | tail -200
+ 2114  history | tail -110
+ 2115  history | tail -111> COMMANDS.txt

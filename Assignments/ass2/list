@@ -1,0 +1,12 @@
+total 352
+drwxr-xr-x 3 deepak deepak   4096 Jan 20 19:13 .
+drwxr-xr-x 3 deepak deepak   4096 Jan 20 12:08 ..
+-rw-r--r-- 1 deepak deepak 114940 Jan 20 14:12 bin
+-rw-r--r-- 1 deepak deepak 114940 Jan 20 17:37 filesinusrbin
+-rw-r--r-- 1 deepak deepak      0 Jan 20 19:13 list
+drwxr-xr-x 2 deepak deepak   4096 Jan 20 12:15 package
+-rw-rw-r-- 1 deepak deepak   3835 Jan 20 12:10 package.tar.gz
+-rw-r--r-- 1 deepak deepak   1132 Jan 20 17:36 pro
+-rw-r--r-- 1 deepak deepak  43472 Jan 20 17:43 proc
+-rwxrwxrwx 1 deepak deepak  49135 Jan 20 18:19 processes
+-rwxr-xr-x 1 deepak deepak    168 Jan 20 18:19 script.sh
