@@ -1,0 +1,139 @@
+/*void DeleteLeafOrOneChild(node * todel){//Takes input as a leaf or a node with 1 child
+  if(todel -> right == NULL){//It doesn't have areght child
+    if(todel -> left == NULL){//Leaf node
+      node * father = todel -> parent;
+      if(father == NULL){//Root node and leaf node
+        head = NULL;
+        DeleteNode(todel);
+        return ;
+      }
+      else{//Normal leaf node
+        if(father -> left == todel){//he was left child of his father
+          father -> left = NULL;
+          node * sibling = father -> right;
+          if(silbling -> colour == 1){//If sibling is black
+            node * lchild = sibling -> left;
+            node * rchild = sibling -> right;
+            if(rchild == NULL){//right child of sibling is black (null)
+              if(lchild == NULL){//both children of sibling are null
+                father -> colour += 1;//if father black then double black if red done
+                sibling -> colour = 0;//colour the sibling red
+                if(father -> colour == 2){
+                  FixDoubleBlack(father);
+                }
+                return ;
+              }
+              else{//sibling has a left red child
+                father -> right = lchild;
+                lchild -> parent = father;
+                lchild -> right = sibling;
+                sibling -> parent = lchild;
+                sibling -> left = lchild -> right;
+                father -> left = NULL;
+                DeleteNode(todel);
+                father -> right = lchild -> left;
+                lchild -> left = father;
+                lchild -> parent = father -> parent;
+                node * grandpa = father -> parent;
+                if(grandpa -> left == father){
+                  grandpa -> left = lchild;
+                }node * sibling = father ->
+                else{
+                  grandpa -> right = lchild;
+                }
+                father -> parent = lchild;
+                lchild -> colour = father -> colour;
+                father -> colour = 1;
+              }
+            }
+            else{//rightchild of sibling is red
+              if(lchild == NULL){//sibling has only one red child and it is right
+                node * grandpa = father -> parent;
+                if(grandpa -> left == father ){
+                  grandpa -> left = sibling;
+                  sibling -> parent = grandpa;
+                }
+                else{
+                  grandpa -> right = sibling;
+                  sibling -> parent = grandpa;
+                }
+                father -> right = lchild;
+                sibling -> left = father;
+                father -> parent = sibling;
+                father -> left = NULL;
+                DeleteNode(todel);
+                rchild -> colour = father -> colour;
+
+              }
+              else{//Both the children of sibling are red
+                node * grandpa = father -> parent;
+                if(grandpa -> left == father ){
+                  grandpa -> left = sibling;
+                  sibling -> parent = grandpa;
+                }
+                else{
+                  grandpa -> right = sibling;
+                  sibling -> parent = grandpa;
+                }
+                sibling -> left = father ;
+                father -> right = lchild;
+                father -> left = NULL;
+                DeleteNode(todel);
+                father -> parent = sibling;
+                lchild -> parent = father;
+                rchild -> colour = father -> colour;
+              }
+            }
+          }
+          else{//Sibling is red
+
+          }
+        }
+        else{//He was right child of his father i.e sibling is left child
+          father -> right = NULL;
+          node * sibling = father -> left;
+        }
+
+      }
+    }
+    else{//Only has a left child
+      node * child = todel -> left;
+      node * father = todel -> parent;
+      if(father -> left == todel){
+        father -> left = child;
+        child -> parent = father;//Head case remaining
+        child -> colour += todel -> colour;
+        DeleteNode(todel);
+      }
+      else{
+        father -> right = child;
+        child -> parent = father;
+        child -> colour += todel -> colour;
+        DeleteNode(todel);
+      }
+      if(child -> colour == 2){
+        FixDoubleBlack(child);
+      }
+    }
+  }
+  else{//Only has a right child
+      node * child = todel -> right;
+      node * father = todel -> parent;//Think about the head
+      if(father -> left == todel){
+        father -> left = child;
+        child -> parent = father;
+        child -> colour += todel -> colour;
+      }
+      else{
+        faather -> right = child;
+        child -> parent = father;
+        child -> colour += todel -> colour;
+      }
+      DeleteNode(todel);
+      if(child -> colour == 2){
+        FixDoubleBlack(child);
+      }
+    }
+  }
+  return ;
+}*/

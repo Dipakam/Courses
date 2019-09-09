@@ -1,0 +1,134 @@
+/*void FixInsertRBT(node * newnode){
+  if(newnode -> parent == NULL){ //current node is root node
+    newnode -> colour = 1;
+    return;
+  }
+  if(newnode -> colour == 1 || (newnode -> colour == 0 && (newnode -> parent)->colour == 1 )){
+    return ;
+  } // In case everything is correct at this node return
+
+  else{ // current node is not root node we look at the father then
+    node * father = newnode -> parent;
+    if(father -> colour == 1){ // father is black we don't jave an issue with child being red
+      return ;
+    }
+    else{ // father is red and child is also red look at uncle
+      int leftfather = 0;
+      node * uncle = NULL;
+      node * grandpa = father -> parent ;
+      if(grandpa -> right == father){
+        leftfather = 0; // leftfather =0  means uncle is left child of the grandpa
+        uncle = grandpa -> left;
+      }
+      else{
+        leftfather = 1; //leftfather =1 means uncle is right child of the grandpa father is left
+        uncle = grandpa -> right ;
+      }
+
+      if(uncle == NULL || uncle -> colour == 1){ //uncle is black and father is red
+        //Need to consider if uncle is null in this case
+        int leftson = 0;
+        if(father -> left == newnode){
+          leftson = 1; // son is left child of father
+        }
+        else{
+          leftson = 0; // son is right child of father
+        }
+        if(leftfather == 1 && leftson == 0){ //left-right case
+          node * prevnodeleft = newnode -> left;
+          grandpa -> left = newnode;
+          newnode -> parent = grandpa;
+          newnode -> left = father;
+          father -> parent = newnode;
+          father -> right = prevnodeleft;
+          prevnodeleft -> parent = father;
+          //Makes a rotation -- Now they are in line need to fix it
+          FixInsertRBT(father);
+          return;
+        }
+        else if(leftfather == 0 && leftson == 1){ //right-left case
+          node * prevnoderight = newnode -> right;
+          grandpa -> right = newnode;
+          newnode -> parent = grandpa;
+          newnode -> right = father;
+          father -> parent = newnode;
+          father -> left = prevnoderight;
+          prevnoderight -> parent = father;
+
+          //Makes a rotation -- now they are in line nned to fix it
+          FixInsertRBT(father);
+          return;
+        }
+        else if(leftfather == 1 && leftson == 1){ // left-left case
+          node * grandpasfather = grandpa -> parent;
+          node * prevnoderight = father -> right;
+          if(grandpasfather != NULL){
+            if(grandpasfather -> left == grandpa){
+              grandpasfather -> left = father;
+            }
+            else{
+              grandpasfather -> right = father;
+            }
+            father -> parent = grandpasfather ;
+            father -> right = grandpa;
+            grandpa -> parent = father;
+            grandpa -> left = prevnoderight;
+            prevnoderight -> parent = grandpa;
+            father -> colour = 1;
+            grandpa -> colour = 0;
+            return ;
+          }
+          else{
+            head = father;
+            father -> parent = NULL;
+            father -> right = grandpa;
+            grandpa -> parent = father;
+            grandpa -> left = prevnoderight;
+            prevnoderight -> parent = grandpa;
+            father -> colour = 1;
+            grandpa -> colour = 0;
+          }
+          return;
+        }
+        else{ // right-right case
+          node * grandpasfather = grandpa -> parent;
+          node * prevnodeleft = father -> left;
+          if(grandpasfather != NULL){
+            if(grandpasfather -> left == grandpa){
+              grandpasfather -> left = father;
+            }
+            else{
+              grandpasfather -> right = father;
+            }
+            father -> parent = grandpasfather ;
+            father -> left = grandpa;
+            grandpa -> parent = father;
+            grandpa -> right = prevnodeleft;
+            prevnodeleft -> parent = grandpa;
+            father -> colour = 1;
+            grandpa -> colour = 0;
+            return ;
+          }
+          else{
+            head = father;
+            father -> parent = NULL;
+            father -> left = grandpa;
+            grandpa -> parent = father;
+            grandpa -> right = prevnodeleft;
+            prevnodeleft -> parent = grandpa;
+            father -> colour = 1;
+            grandpa -> colour = 0;
+          }
+          return ;
+        }
+      }
+      else { //uncle is red and father is also red  implies grandpa is black
+        uncle -> colour = 1;
+        father -> colour = 1;
+        grandpa -> colour = 0;
+        FixInsertRBT(grandpa);
+        return;
+      }
+    }
+  }
+}*/

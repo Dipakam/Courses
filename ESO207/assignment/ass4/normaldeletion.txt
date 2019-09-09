@@ -1,0 +1,152 @@
+/*node * NormalDeletion(node * todel,node * root){//case of head is sorted
+//Normal deletion function returns the pointer to the node that has now replaced
+//the node to be deleted
+  if(todel == NULL){
+    return NULL;
+  }
+  else if(todel -> parent == NULL){//The case of root node of the tree
+    if(todel -> right == NULL){ //root has no right child
+      if(todel -> left == NULL){ //root has no children
+        head = NULL; //The tree becomes nul in the case as the only element is deleted
+        DeleteNode(todel);
+      }
+      else{ //root has only left child
+        node * child = todel -> left;
+        head = child;
+        child -> parent = NULL;
+        DeleteNode(todel);
+      }
+    }
+    else{ //root has a right child
+      if(todel -> left == NULL){//root has only right child
+        node * child = todel -> right;
+        head = child;
+        child -> parent = NULL;
+        DeleteNode(todel);
+      }
+      else{//root has both the children
+        node * succ = succesor(todel);
+        todel -> key = succ -> key;
+        //todel -> colour = succ -> colour;
+        node * fatherofsucc = succ -> parent;
+        node * childofsucc = succ ->right;
+        //succ can not have a left child so in cases when it doesn't have achild
+        //the childofsucc variable will take value NULL
+        if(fatherofsucc -> left == succ){
+          fatherofsucc -> left = childofsucc;
+          if(childofsucc != NULL){
+            childofsucc -> parent = fatherofsucc;
+          }
+        }
+        else{
+          fatherofsucc -> right = childofsucc;
+          if(childofsucc != NULL){
+            childofsucc -> parent = fatherofsucc;
+          }
+        }
+        DeleteNode(succ);
+      }
+    }
+    return head;//In case of root the pointer to be returned is head
+  }
+  else{//It is not a root node but a leaf or a normal node inside
+    if(todel -> right == NULL){//It does not have a right child
+      if(todel -> left == NULL){//It does not have a child
+        node * father = todel -> parent;
+        if(father -> left == todel){
+          father -> left = NULL;
+        }
+        else{
+          father -> right = NULL;
+        }
+        DeleteNode(todel);
+        return NULL;//Meaning that a leaf node was deleted so there is nothing now
+      }
+      else{//It has a left child
+        node * child = todel -> left;
+        node * father = todel -> parent;
+        if(father -> left == todel){
+          father -> left = child;
+          child -> parent = father;
+          DeleteNode(todel);
+        }
+        else{
+          father -> right = child;
+          child -> parent = father;
+          DeleteNode(todel);
+        }
+        return child;
+      }
+    }
+    else{//It has a right child
+      if(todel -> left == NULL){//It only has a right child
+        node * child = todel -> right;
+        node * father = todel -> father;
+        if(father -> left == todel){
+          father -> left = child;
+          child -> parent = father;
+        }
+        else{
+          father -> right = child;
+          child -> parent = father;
+        }
+        return child ;
+      }
+      else{//Else it has two children also the case of head is to be checked again
+        node * succ = succesor(todel);
+        todel -> key = succ -> key;
+        //todel -> colour = succ -> colour;
+        node * fatherofsucc = succ -> parent;
+        node * childofsucc = succ -> right;
+        if(fatherofsucc -> left == succ){
+          fatherofsucc -> left = childofsucc;
+          if(childofsucc != NULL){
+            childofsucc -> parent = fatherofsucc;
+          }
+        }
+        else{
+          fatherofsucc -> right = childofsucc;
+          if(childofsucc != NULL){
+            childofsucc -> parent = fatherofsucc;
+          }
+        }
+        DeleteNode(succ);
+        return fatherofsucc;//We did not actually delete the given node but replaced the data
+        //So we are returning the original pointer which points the node
+      }
+    }
+  }
+}*/
+
+
+
+
+
+
+
+//if(todel -> colour == 0){//If node is red
+
+  /*todel = NormalDeletion(todel,head);
+  if(todel == NULL){//leaf node was deleted and it was red so nothing to do
+    printf("%d",BlackHeight(head));
+    return ;
+  }
+  else if(todel -> colour == 0){//a red node replaced another red node
+    printf("%d",BlackHeight(head));
+    return ;
+  }
+  else if(todel -> colour == 1){//a black node replaced a red node
+    printf("%d",BlackHeight(head));
+    return ;//In this case we do not need to do anything
+  }*/
+  //First delete maintaining the bst and then fix the Deleted RBT
+//}
+//else{//If node is black
+  /*todel = NormalDeletion(todel,head);
+  if(todel -> colour == 0){//If the replaced node is of red colour
+    todel -> colour = 1;//change the colour to black and we are done
+    printf("%d",BlackHeight(head));
+    return ;
+  }*/
+  //First delete maintaining the bst and then fix the Deleted RBT
+//}
