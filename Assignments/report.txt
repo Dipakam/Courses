@@ -1,0 +1,15 @@
+First we unzip the file using command
+tar -xzvf package.tar.gz
+After unzipping package.tar.gz we enter the directory "package" and execute
+the create_asgn file using ./create_asgn command. After executing create_asgn
+a new directory named "asgn" is formed.
+We try to enter and read the contents of the directory but we are not allowed to
+to read the contents of the directory. So in order to give us the rights we use
+command "chmod 777 asgn" (or simply use "chmod u+x asgn") Then we can see the contents of
+the directory. Then we enter into the bin directory.We see that "ls" doesn't show any files in
+the directory. We use "ls -al" and find that there's a hidden file in it named ".run_me".
+We execute the file using ""./.run_me" and there's a error : Error: Directory "output" does not exist! Create one.
+So as there is no directory named output , we should create one using "mkdir output".
+Then after executing  .run_me , we enter the output directory and see that there's file named code.html
+and we do not have the exec rights for this file. So we run chmod 777 code.html (or simply chmod u+x code.html)
+Now we can execute code.html using firefox code.html and we are done.
