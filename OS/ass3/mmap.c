@@ -223,17 +223,8 @@ long vm_area_map(struct exec_context *current, u64 addr, int length, int prot, i
 				//we are going to stop if we reach end or we have found an
 				//overlap as in that case we are going to allocate the memory 
 				//as if we did not have any address in another for loop
-				if(cur -> vm_end < addr){
-					//not arrived yet
-					prev = cur;
-					cur = cur -> vm_next;
-					continue;
-				}
-				else if(cur -> vm_start >= addr + length){
-					//we have gone too far
-					break;
-				}
-				else if(cur -> vm_end == addr - 1){
+				
+				if(cur -> vm_end == addr - 1){
 					//Contiguous memory is requested in this case we 
 					//are going to merge it into the previous memory
 					if(cur -> next){
@@ -298,8 +289,20 @@ long vm_area_map(struct exec_context *current, u64 addr, int length, int prot, i
 						}
 					}
 				}
-				else
-
+				else if(cur -> vm_end < addr){
+					//not arrived yet
+					prev = cur;
+					cur = cur -> vm_next;
+					continue;
+				}
+				else if(cur -> vm_start >= addr + length){
+					//we have gone too far
+					break;
+				}
+				else{
+					
+				}
+				
 			}
 		}
 	}
